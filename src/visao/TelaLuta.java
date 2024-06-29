@@ -10,9 +10,9 @@ import java.awt.Color;
 
 public class TelaLuta {
     
-    private static BufferedImage imgBackground = new Utils.ImgUtils().scaleImage(800,150,"src//utils/UESB.jpeg");
+    private static BufferedImage imgBackground = new Utils.ImgUtils().scaleImage(800,150,"src//utils/UESB.png");
     private static BufferedImage lifeBarIcon = new Utils.ImgUtils().scaleImage(100,100,"src//utils/LifeBarIcon.png");
-    private static BufferedImage imgChao = new Utils.ImgUtils().scaleImage(800,100,"src//utils/chao.jpg"); 
+    private static BufferedImage imgChao = new Utils.ImgUtils().scaleImage(800,100,"src//utils/chao.gif"); 
 
     private static JPanel panel;
     private static JLabel lifeBar1 = new JLabel();

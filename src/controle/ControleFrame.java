@@ -49,8 +49,7 @@ public class ControleFrame extends JFrame implements MouseListener {
 		this.addKeyListener(keyInput);
 		keyInput.runThreads();
 		this.addMouseListener(this);
-		TelaIni.getLabel1().addMouseListener(this);
-		TelaIni.getLabel2().addMouseListener(this);
+
 		TelaIni.getLabel3().addMouseListener(this);
 		TelaIni.getLabel4().addMouseListener(this);
 
@@ -106,21 +105,7 @@ public class ControleFrame extends JFrame implements MouseListener {
 	public void mouseClicked(MouseEvent e) {
 
 		if (ControleFrame.getControle() == GameState.SELECTPLAYER) {
-			if (e.getSource() == TelaIni.getLabel1()) {
-				if (clique == 0) {
-					personagemUm = new Personagem(15, 20, 120, Personagem.getOverall(), "eagle");
-				} else {
-					personagemDois = new Personagem(15, 20, 120, Personagem.getOverall(), "eagle");
-				}
-				clique += 1;
-			} else if (e.getSource() == TelaIni.getLabel2()) {
-				if (clique == 0) {
-					personagemUm = new Personagem(20, 5, 100, Personagem.getOverall(), "raiden");
-				} else {
-					personagemDois = new Personagem(20, 5, 100, Personagem.getOverall(), "raiden");
-				}
-				clique += 1;
-			} else if (e.getSource() == TelaIni.getLabel3()) {
+			if (e.getSource() == TelaIni.getLabel3()) {
 				if (clique == 0) {
 					personagemUm = new Personagem(25, 10, 170, Personagem.getOverall(), "scorpion");
 				} else {
