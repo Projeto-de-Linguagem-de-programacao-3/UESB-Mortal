@@ -10,7 +10,7 @@ import src.controle.ControleFrame;
 public class TelaLuta {
 
     // Carrega a imagem de fundo
-    private static BufferedImage imgBackground = new Utils.ImgUtils().scaleImage(800, 600, "src//utils/UESB.png");
+    private static BufferedImage imgBackground = new Utils.ImgUtils().scaleImage(800, 600, "src//utils/cenario.png");
     private static BufferedImage lifeBarIcon = new Utils.ImgUtils().scaleImage(100, 100, "src//utils/LifeBarIcon.png");
     private static BufferedImage imgChao = new Utils.ImgUtils().scaleImage(800, 100, "src//utils/chao.jpg");
 
