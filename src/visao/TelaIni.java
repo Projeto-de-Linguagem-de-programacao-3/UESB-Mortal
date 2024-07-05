@@ -17,9 +17,9 @@ public class TelaIni {
     private static JLabel label4 = new JLabel();
     private static JPanel panel = new JPanel();
 
-    private static JLabel labelOverall2 = new JLabel("Points: 125");
+    private static JLabel labelOverall2 = new JLabel("Points: 0");
 
-    private static JLabel labelOverall4 = new JLabel("Points: 180");
+    private static JLabel labelOverall4 = new JLabel("Points: 0");
 
     public static JPanel criarTela() {
 

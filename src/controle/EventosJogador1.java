@@ -43,16 +43,16 @@ public class EventosJogador1 implements Runnable {
                 if (getMovieDirection()[1]) {
                     if (ControleFrame.getPlayUm().getLocation().x < 720
                             && ControleFrame.getPlayUm().getLocation().x < (ControleFrame.getPlayDois().getLocation().x
-                                    - (ControleFrame.getPlayDois().getWidth()/2)))
+                                    - (ControleFrame.getPlayDois().getWidth() / 2)))
                         ControleFrame.getPlayUm().setLocation(ControleFrame.getPlayUm().getLocation().x + 5,
                                 ControleFrame.getPlayUm().getLocation().y);
                     ControleFrame.getPlayUm().andar();
-                    
+
                 } else if (getMovieDirection()[3]) {
                     if (ControleFrame.getPlayUm().getLocation().x > 0)
                         ControleFrame.getPlayUm().setLocation(ControleFrame.getPlayUm().getLocation().x - 5,
                                 ControleFrame.getPlayUm().getLocation().y);
-                        ControleFrame.getPlayUm().andar();
+                    ControleFrame.getPlayUm().andar();
 
                 } else if (getMovieDirection()[0]) {
                     float vlc = 0;
@@ -104,25 +104,25 @@ public class EventosJogador1 implements Runnable {
     public static void soco() {
 
         ControleFrame.getPlayUm().setLocation(Math.round(ControleFrame.getPlayUm().getX() + 2),
-        ControleFrame.getPlayUm().getY());
+                ControleFrame.getPlayUm().getY());
 
         colision_check(ControleFrame.getPlayUm(), ControleFrame.getPlayDois(),
-        ControleFrame.getPersonagem1().getsoco());
+                ControleFrame.getPersonagem1().getsoco());
 
         ControleFrame.getPlayUm().setLocation(Math.round(ControleFrame.getPlayUm().getX() - 2),
-        ControleFrame.getPlayUm().getY());
+                ControleFrame.getPlayUm().getY());
 
     }
 
     public static void chute() {
         ControleFrame.getPlayUm().setLocation(Math.round(ControleFrame.getPlayUm().getX() + 2),
-        ControleFrame.getPlayUm().getY());
+                ControleFrame.getPlayUm().getY());
 
         colision_check(ControleFrame.getPlayUm(), ControleFrame.getPlayDois(),
                 ControleFrame.getPersonagem1().getChute());
-                
+
         ControleFrame.getPlayUm().setLocation(Math.round(ControleFrame.getPlayUm().getX() - 2),
-                        ControleFrame.getPlayUm().getY());
+                ControleFrame.getPlayUm().getY());
     }
 
     public static boolean colision_check(JLabel LA, JLabel LB, int forca) {
